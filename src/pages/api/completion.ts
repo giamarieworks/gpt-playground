@@ -31,7 +31,7 @@ export default async function handler(
     return new Response("Missing messages", { status: 400 });
   }
 
-  const token = OPENAI_API_TOKEN
+  const token = OPENAI_API_TOKEN as string
 
   const config = {
     model: model || defaultConfig.model,

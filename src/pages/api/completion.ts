@@ -2,6 +2,8 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { defaultConfig, getOpenAICompletion } from "@/utils/OpenAI";
 import { OpenAIRequest } from "@/utils/OpenAI";
 
+const OPENAI_API_TOKEN = process.env.OPENAI_API_TOKEN
+
 export const config = {
   runtime: "edge",
 };
@@ -29,10 +31,7 @@ export default async function handler(
     return new Response("Missing messages", { status: 400 });
   }
 
-  const token = req.headers.get("Authorization")?.split(" ")[1];
-  if (!token) {
-    return new Response("Missing token", { status: 401 });
-  }
+  const token = OPENAI_API_TOKEN
 
   const config = {
     model: model || defaultConfig.model,

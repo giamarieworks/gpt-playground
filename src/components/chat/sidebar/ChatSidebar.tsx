@@ -30,7 +30,6 @@ export default function ChatSidebar({}: Props) {
         <div className="flex flex-col gap-y-2 border-y border-white/10 py-2">
           <div className="flex flex-col border-b border-white/10 gap-y-2">
             <CurrentModel />
-            <ApiKey />
           </div>
           <Link
             className="flex items-center gap-3 rounded p-3 transition-colors hover:bg-gray-500/10"
@@ -47,9 +46,8 @@ export default function ChatSidebar({}: Props) {
           <ThemeButton />
         </div>
 
-        <Github />
         <span className="text-center text-primary/80">
-          Made with ❤️ by Nashex
+          <small>Made with ❤️ by <a href="https://just-ai.com" target="_blank">Just AI</a></small>
         </span>
       </div>
     </div>

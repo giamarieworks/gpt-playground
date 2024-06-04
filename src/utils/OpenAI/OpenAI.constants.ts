@@ -1,7 +1,7 @@
 import { OpenAIModel } from "./OpenAI.types";
 
 export const OpenAIChatModels: Record<string, OpenAIModel> = {
-  "gpt-4": {
+  "gpt-4o": {
     id: "gpt-4o",
     name: "GPT-4o",
     maxLimit: 8192,

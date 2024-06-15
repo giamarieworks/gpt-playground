@@ -15,10 +15,10 @@ export default function Chat() {
   return (
     <React.Fragment>
       <Head>
-        <title>GPT playground</title>
-        <meta name="description" content="GPT playground." />
+        <title>GPT Playground</title>
+        <meta name="description" content="GPT Playground." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico"/>
       </Head>
       <div className="max-w-screen relative h-screen max-h-screen w-screen overflow-hidden">
         <ChatHeader />

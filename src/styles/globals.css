@@ -4,14 +4,14 @@
 
 @layer base {
   :root {
-    --text-primary: 41, 37, 36;
-    --bg-primary: 243, 244, 246;
-    --bg-secondary: 229, 231, 235;
-    --bg-tertiary: 209, 213, 219;
+    --text-primary: 240, 248, 255;
+    --bg-primary: 0, 0, 139;
+    --bg-secondary: 0, 0, 139;
+    --bg-tertiary: 0, 0, 139;
   }
 
   .dark {
-    --text-primary: 255, 255, 255;
+    --text-primary: 0, 0, 139;
     --bg-primary: 17, 24, 39;
     --bg-secondary: 31, 41, 55;
     --bg-tertiary: 55, 65, 81;
